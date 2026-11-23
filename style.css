@@ -1,0 +1,168 @@
+/* Estilos gerais - Tema Dark */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fundo bem escuro */
+    color: #e0e0e0; /* Texto cinza claro */
+}
+
+/* --- ESTILOS DA PÁGINA DE LOGIN --- */
+.login-box {
+    background: #1e1e1e; /* Cinza escuro */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(217, 122, 0, 0.3); /* Sombra laranja suave */
+    text-align: center;
+    width: 300px;
+    margin: 100px auto;
+    border: 1px solid #333;
+}
+
+.login-box h2 {
+    color: #fff;
+}
+
+.login-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 5px;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #d97a00; /* Borda laranja ao clicar */
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d97a00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background-color: #ff8c00; /* Laranja mais claro ao passar o mouse */
+}
+
+/* --- ESTILOS DA PÁGINA DA BARBEARIA --- */
+
+header {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #d97a00; /* Laranja combinando com as fotos */
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.container-principal {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center; /* Alinha o texto no meio da imagem */
+}
+
+.coluna-imagem {
+    flex: 1;
+}
+
+.coluna-imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas na foto */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Brilho suave nas laterais */
+}
+
+.coluna-texto {
+    flex: 1;
+    text-align: justify;
+}
+
+.coluna-texto h2 {
+    color: #d97a00;
+    border-bottom: 2px solid #d97a00; /* Linha laranja embaixo do título */
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.coluna-texto p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #b0b0b0;
+}
+
+.beneficios {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #1e1e1e; /* Caixa escura */
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    box-shadow: 0 0 15px rgba(217, 122, 0, 0.2);
+}
+
+.beneficios h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.beneficios-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.beneficios ul {
+    list-style-type: none; /* Tira as bolinhas padrão */
+    padding-left: 0;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.beneficios ul li::before {
+    content: "✂️"; /* Adiciona uma tesourinha como marcador */
+    margin-right: 10px;
+}
+
+.beneficios img {
+    width: 50%; /* Ajusta o tamanho da imagem dos cortes */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+/* Responsividade: para ficar bonito no celular também */
+@media (max-width: 768px) {
+    .container-principal {
+        flex-direction: column;
+    }
+    .beneficios-conteudo {
+        flex-direction: column;
+    }
+    .beneficios img {
+        width: 100%;
+    }
+}
